@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<div class="header-block">
+		<h1>All about dogs</h1>
+		<img id="dog" src="dogpaws.png" alt="dogpaws">
+	</div>
+</header>
+<main>
+	<div id="box">
+		<div class="left">
+			<nav>
+				<ul>
+					<li class="list"><a href="index.html">HTML only</a> </li>
+					<li><a href="#"> HTML styled with CSS</a></li>
+					<li><a href="#"> Dynamic webpage without data</a></li>
+					<li><a href="#"> Dynamic webpage with data</a></li>
+				
+				</ul>
+			</nav>
+		</div>
+		<div class="right">
+			<div class="right1"><h4>Who is your favorite dog?</h4><br>
+				<form>
+				<label>Dogs name
+					<input type="text" name="name" placeholder="dogs name">
+				</label><br><br>
+				<label>Dogs breed:
+					<input type="text" name="breed" placeholder="dog's breed">
+				</label><br><br>
+				<input id="button" 
+					type="button" 
+					value="Add"
+					onclick="addDog(this.form, true)">
+				</form>
+			</div>	
+			<div class="right2"><h4>Some favorites</h4>	<br>
+				<ul id="dogs-list"></ul>
+			</div>
+		</div>
+	</div>
+</main>
+<footer><a href=""> Learn more about dogs</a></footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
